@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+section {
+    width: 500px;
+    height: 200px;
+    background-color: #ddd;
+    padding: 20px 10px;
+    margin: 50px auto;
+    border-radius: 6px;
+    box-shadow: 2px 3px 4px #bab9b9;
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+select {
+    width: 100%;
+    padding: 3px 6px;
+    outline: 0;
+    border: 0;
+}
+.Open {
+    font-family: "Open Sans", sans-serif;
+
+}
+.Metal {
+    font-family: "Metal Mania", system-ui;
+
+}
+.Caesar {
+    font-family: "Caesar Dressing", system-ui;
+}
+.result {
+    background-color: white;
+    padding: 10px;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
