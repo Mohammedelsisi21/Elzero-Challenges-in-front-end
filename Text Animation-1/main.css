@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+}
+h1 {
+    position: relative;
+    text-transform: uppercase;
+    -webkit-box-reflect: below -25px linear-gradient( transparent,#0004);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 span {
+    position: relative;
+    display: inline-block;
+    font-size: 5rem;
+    animation: animate-text 1s infinite;
+    animation-delay: calc(var(--i) * .1s);
+}
+@keyframes animate-text {
+    0%,
+    40%,
+    100% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-20px);
+    }
+}
