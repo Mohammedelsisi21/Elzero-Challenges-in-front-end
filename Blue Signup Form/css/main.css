@@ -1,0 +1,12 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --main-color: #2196F3;
+    --second-color: #999999;
+    --facebook-color: #3B5998;
+    --twitter-color: #1DA1F2;
+    --gmail-color: #DB4437;
+}
