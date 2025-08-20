@@ -10,3 +10,134 @@
     --twitter-color: #1DA1F2;
     --gmail-color: #DB4437;
 }
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+.container {
+    width: 350px;
+    height: 550px;
+    padding: 20px;
+    background-color: var(--main-color);
+    margin: 100px auto;
+    & .sign-up{
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+        border-radius: 10px;
+        & h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 30px;
+            text-transform: capitalize;
+        }
+        & form {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            & div:not(:last-child) {
+                position: relative;
+                & div {
+                    position: absolute;
+                    z-index: 1000;
+                    top: 12px;
+                    left: -5px;
+                    color: var(--second-color);
+                }
+                margin-bottom: 10px;
+                height: 40px;
+                & input {
+                    &::placeholder {
+                        font-size: 16px;
+                    }
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    font-size: 20px;
+                    padding: 6px 20px;
+                    border: 0;
+                    border-bottom: 2px solid var(--second-color);
+                    caret-color: var(--main-color);
+                    color: var(--second-color);
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+            & div:last-child {
+                height: 40px;
+                width: 80%;
+                margin: 10px auto 15px;
+                & button {
+                    width: 100%;
+                    height: 100%;
+                    background-color: var(--main-color);
+                    color: white;
+                    border: 0;
+                    border-radius: 15px;
+                    font-size: 18px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        & .here-link {
+            text-align: center;
+            margin: 10px 0px;
+            font-size: 14px;
+            color: var(--second-color);
+            & a {
+                color: var(--main-color);
+                font-weight: 600;
+                margin-left: 5px;
+            }
+        }
+        & .line {
+            text-align: center;
+            color: var(--second-color);
+            margin-bottom: 5px;
+        }
+        & .other {
+            text-align: center;
+            color: var(--second-color);
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+        & .socila {
+            display: flex;
+            margin-top: 15px;
+            justify-content: center;
+            align-items: center;
+        & li:not(:first-child) {
+            margin-left: 18px;
+        }
+        & li {
+            margin-top: 10px;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            & a {
+                color: white;
+            }
+        }
+        & li:nth-child(1){
+            background-color: var(--facebook-color);
+        }
+        & li:nth-child(2){
+            background-color: var(--twitter-color);
+        }
+        & li:nth-child(3){
+            background-color: var(--gmail-color);
+        }
+        }
+    }
+}
